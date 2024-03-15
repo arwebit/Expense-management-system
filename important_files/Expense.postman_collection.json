@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "8c196236-156f-478b-9715-7bb4260cd9b8",
+		"name": "Expense",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24253958"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get all users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{\"id\":1,\"code\":\"DMC\",\"name\":\"DEMO CENTRE\",\"email\":\"demo1\",\"password\":\"demo1\",\"contact_person\":\"SUMAN\",\"phone\":\"9831343208\",\"address\":\"KOLKATA\",\"created_at\":\"2021-12-19T00:00:00.000Z\",\"is_active\":\"y\",\"minimum_balance\":99,\"has_notice\":\"y\",\"show_disclaimer\":\"y\",\"header_image\":\"15761498053373568.jpg\",\"show_report_header\":\"n\",\"footer_image\":\"7849196947781709.jpg\",\"show_report_footer\":\"n\",\"show_qr_code\":\"y\",\"report_margin_top\":200,\"report_margin_right\":15,\"report_margin_bottom\":15,\"report_margin_left\":15,\"price_single_view\":40,\"price_double_view\":50,\"price_multi_view\":200,\"price_both_view\":80,\"price_other_view\":400,\"doctor_price_single_view\":1,\"doctor_price_double_view\":1,\"doctor_price_multi_view\":1,\"doctor_price_both_view\":1,\"doctor_price_other_view\":2,\"doctor_ids\":\"1\",\"cardiology_price\":40,\"cardiology_doctor_price\":20,\"tmt_price\":150,\"tmt_doctor_price\":100,\"cardiologist_ids\":\"2\",\"neurology_price\":300,\"neurology_doctor_price\":200,\"neurologist_ids\":\"1\",\"agent_id\":18,\"agent_price_single_view\":1,\"agent_price_double_view\":2,\"agent_price_multi_view\":3,\"agent_price_both_view\":4,\"agent_price_other_view\":5,\"cardiology_agent_price\":6,\"tmt_agent_price\":7,\"neurology_agent_price\":8,\"prefer_radiologist_id\":0,\"prefer_cardiologist_id\":0,\"prefer_neurologist_id\":0,\"balance\":274}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{\"id\":1,\"code\":\"DMC\",\"name\":\"DEMO CENTRE\",\"email\":\"demo1\",\"password\":\"demo1\",\"contact_person\":\"SUMAN\",\"phone\":\"9831343208\",\"address\":\"KOLKATA\",\"created_at\":\"2021-12-19T00:00:00.000Z\",\"is_active\":\"y\",\"minimum_balance\":99,\"has_notice\":\"y\",\"show_disclaimer\":\"y\",\"header_image\":\"15761498053373568.jpg\",\"show_report_header\":\"n\",\"footer_image\":\"7849196947781709.jpg\",\"show_report_footer\":\"n\",\"show_qr_code\":\"y\",\"report_margin_top\":200,\"report_margin_right\":15,\"report_margin_bottom\":15,\"report_margin_left\":15,\"price_single_view\":40,\"price_double_view\":50,\"price_multi_view\":200,\"price_both_view\":80,\"price_other_view\":400,\"doctor_price_single_view\":1,\"doctor_price_double_view\":1,\"doctor_price_multi_view\":1,\"doctor_price_both_view\":1,\"doctor_price_other_view\":2,\"doctor_ids\":\"1\",\"cardiology_price\":40,\"cardiology_doctor_price\":20,\"tmt_price\":150,\"tmt_doctor_price\":100,\"cardiologist_ids\":\"2\",\"neurology_price\":300,\"neurology_doctor_price\":200,\"neurologist_ids\":\"1\",\"agent_id\":18,\"agent_price_single_view\":1,\"agent_price_double_view\":2,\"agent_price_multi_view\":3,\"agent_price_both_view\":4,\"agent_price_other_view\":5,\"cardiology_agent_price\":6,\"tmt_agent_price\":7,\"neurology_agent_price\":8,\"prefer_radiologist_id\":0,\"prefer_cardiologist_id\":0,\"prefer_neurologist_id\":0,\"balance\":274}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Soumyanjan\",\r\n    \"last_name\": \"Dey\",\r\n    \"email\": \"arghya992@gmail.com\",\r\n    \"mobile\": \"\",\r\n    \"username\": \"arghya\",\r\n    \"password\": \"arghya\",\r\n    \"role\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{\"id\":1,\"code\":\"DMC\",\"name\":\"DEMO CENTRE\",\"email\":\"demo1\",\"password\":\"demo1\",\"contact_person\":\"SUMAN\",\"phone\":\"9831343208\",\"address\":\"KOLKATA\",\"created_at\":\"2021-12-19T00:00:00.000Z\",\"is_active\":\"y\",\"minimum_balance\":99,\"has_notice\":\"y\",\"show_disclaimer\":\"y\",\"header_image\":\"15761498053373568.jpg\",\"show_report_header\":\"n\",\"footer_image\":\"7849196947781709.jpg\",\"show_report_footer\":\"n\",\"show_qr_code\":\"y\",\"report_margin_top\":200,\"report_margin_right\":15,\"report_margin_bottom\":15,\"report_margin_left\":15,\"price_single_view\":40,\"price_double_view\":50,\"price_multi_view\":200,\"price_both_view\":80,\"price_other_view\":400,\"doctor_price_single_view\":1,\"doctor_price_double_view\":1,\"doctor_price_multi_view\":1,\"doctor_price_both_view\":1,\"doctor_price_other_view\":2,\"doctor_ids\":\"1\",\"cardiology_price\":40,\"cardiology_doctor_price\":20,\"tmt_price\":150,\"tmt_doctor_price\":100,\"cardiologist_ids\":\"2\",\"neurology_price\":300,\"neurology_doctor_price\":200,\"neurologist_ids\":\"1\",\"agent_id\":18,\"agent_price_single_view\":1,\"agent_price_double_view\":2,\"agent_price_multi_view\":3,\"agent_price_both_view\":4,\"agent_price_other_view\":5,\"cardiology_agent_price\":6,\"tmt_agent_price\":7,\"neurology_agent_price\":8,\"prefer_radiologist_id\":0,\"prefer_cardiologist_id\":0,\"prefer_neurologist_id\":0,\"balance\":274}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Soumyanjan\",\r\n    \"last_name\": \"De\",\r\n    \"email\": \"arghya992@gmail.com\",\r\n    \"mobile\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/users/65f47ee99c1badd6ab32101b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"users",
+								"65f47ee99c1badd6ab32101b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Password change",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{\"id\":1,\"code\":\"DMC\",\"name\":\"DEMO CENTRE\",\"email\":\"demo1\",\"password\":\"demo1\",\"contact_person\":\"SUMAN\",\"phone\":\"9831343208\",\"address\":\"KOLKATA\",\"created_at\":\"2021-12-19T00:00:00.000Z\",\"is_active\":\"y\",\"minimum_balance\":99,\"has_notice\":\"y\",\"show_disclaimer\":\"y\",\"header_image\":\"15761498053373568.jpg\",\"show_report_header\":\"n\",\"footer_image\":\"7849196947781709.jpg\",\"show_report_footer\":\"n\",\"show_qr_code\":\"y\",\"report_margin_top\":200,\"report_margin_right\":15,\"report_margin_bottom\":15,\"report_margin_left\":15,\"price_single_view\":40,\"price_double_view\":50,\"price_multi_view\":200,\"price_both_view\":80,\"price_other_view\":400,\"doctor_price_single_view\":1,\"doctor_price_double_view\":1,\"doctor_price_multi_view\":1,\"doctor_price_both_view\":1,\"doctor_price_other_view\":2,\"doctor_ids\":\"1\",\"cardiology_price\":40,\"cardiology_doctor_price\":20,\"tmt_price\":150,\"tmt_doctor_price\":100,\"cardiologist_ids\":\"2\",\"neurology_price\":300,\"neurology_doctor_price\":200,\"neurologist_ids\":\"1\",\"agent_id\":18,\"agent_price_single_view\":1,\"agent_price_double_view\":2,\"agent_price_multi_view\":3,\"agent_price_both_view\":4,\"agent_price_other_view\":5,\"cardiology_agent_price\":6,\"tmt_agent_price\":7,\"neurology_agent_price\":8,\"prefer_radiologist_id\":0,\"prefer_cardiologist_id\":0,\"prefer_neurologist_id\":0,\"balance\":274}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"arghya\",\r\n    \"password\":\"arghya123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/users/passchange",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"users",
+								"passchange"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
